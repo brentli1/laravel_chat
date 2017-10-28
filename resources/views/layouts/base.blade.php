@@ -8,16 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <meta name="id" content="{{ Auth::user()->id }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    @yield('content')
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+	<div class="page-main">
+		@yield('content')
+	</div>
 </body>
 </html>
